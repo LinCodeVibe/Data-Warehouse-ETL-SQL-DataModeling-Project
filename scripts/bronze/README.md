@@ -1,4 +1,4 @@
-# 🪙 Bronze Layer — Data Warehouse ETL (Source → Bronze)
+# 🪙 Bronze Layer: Data Warehouse ETL (Source → Bronze)
 
 ## Overview
 It contains SQL scripts for building and loading the **Bronze Layer** of a modern data warehouse.  
@@ -6,13 +6,15 @@ The Bronze Layer serves as the **raw ingestion zone**, where external CSV source
 
 ---
 
-## 
-![Data Flow Diagram](/scripts/bronze/BronzeLayer.png)
+
+<p align="center">
+  <img src="/scripts/bronze/BronzeLayer.png" alt="Bronze Layer ETL Diagram" width="380">
+</p>
 
 ----
 
 
-## 📂 Repository Structure
+## 📂 Structure
 | File | Description |
 |------|--------------|
 | `DDL_create_table_bronze.sql` | Creates all Bronze tables (CRM & ERP) under the `bronze` schema. Drops existing tables if they already exist. |
@@ -42,10 +44,6 @@ It performs the following steps:
 2. Loads data from local CSV files using the SQL Server `BULK INSERT` command.  
 3. Prints detailed logs with start and end timestamps for each table load.  
 
-### Example Usage
-```sql
-EXEC bronze.load_bronze;
-```
 
 ### Key Features
 - Automatic data refresh from external source files  
