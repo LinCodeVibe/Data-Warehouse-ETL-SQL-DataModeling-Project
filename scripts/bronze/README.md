@@ -7,8 +7,8 @@ The Bronze Layer serves as the **raw ingestion zone**, where external CSV source
 ---
 
 ## 
-![Data Flow Diagram](scripts/bronze/scripts/bronze/BronzeLayer.png)
-.
+![Data Flow Diagram](/scripts/bronze/BronzeLayer.png)
+
 ----
 
 
